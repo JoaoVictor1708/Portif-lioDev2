@@ -166,8 +166,9 @@ strong{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 20px 10px 100px;;
     gap: 10px;
+    width: 100%;
     border-radius: 16px;
     background: url(./assets/b5.jpg) no-repeat center;
     background-size: cover;
@@ -176,8 +177,7 @@ strong{
 #body4 a{
     height: 100%;
     max-height: 70px;
-    width: 100%;
-    max-width: 400px;
+    width: 51px;
     border: 1px solid var(--gray-03--);
     display: flex;
     justify-content: start;
@@ -190,10 +190,15 @@ strong{
     border-radius: 16px;
 }
 
+#body4 a:hover{
+    width: 300px;
+}
+
 #media{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
+    justify-content: center;
     gap: 10px;
     width: 100%;
     max-height: 600px;
@@ -215,4 +220,14 @@ strong{
 #body4 a:hover i:last-child{
     transform: rotate(0);
 }
+
+#body4 a i:last-child, #body4 a h2{
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#body4 a:hover i:last-child, #body4 a:hover h2{
+    opacity: 1;
+}
+
 
